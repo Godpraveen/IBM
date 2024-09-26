@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22154" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22130"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="ViewFoeHeader" customModule="SAMPLE_TASK" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="767" height="76"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kn4-sg-iqp">
+                    <rect key="frame" x="0.0" y="0.0" width="767" height="42"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mHB-7h-7Nc">
+                            <rect key="frame" x="0.0" y="0.0" width="76.666666666666671" height="42"/>
+                            <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <state key="normal" title="Button"/>
+                            <buttonConfiguration key="configuration" style="plain" title="RowId"/>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ivh-sY-tMx">
+                            <rect key="frame" x="76.666666666666686" y="0.0" width="230" height="42"/>
+                            <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <state key="normal" title="Button"/>
+                            <buttonConfiguration key="configuration" style="plain" title="CategoryName"/>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7m4-2o-3bL">
+                            <rect key="frame" x="306.66666666666669" y="0.0" width="153.66666666666669" height="42"/>
+                            <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <state key="normal" title="Button"/>
+                            <buttonConfiguration key="configuration" style="plain" title="Code"/>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kYc-Vg-QBM">
+                            <rect key="frame" x="460.33333333333331" y="0.0" width="153.33333333333331" height="42"/>
+                            <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <state key="normal" title="Button"/>
+                            <buttonConfiguration key="configuration" style="plain" title="CreatedBy"/>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VH6-Wt-XaZ">
+                            <rect key="frame" x="613.66666666666663" y="0.0" width="153.33333333333337" height="42"/>
+                            <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <state key="normal" title="Button"/>
+                            <buttonConfiguration key="configuration" style="plain" title="Admin"/>
+                        </button>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="mHB-7h-7Nc" firstAttribute="width" secondItem="kn4-sg-iqp" secondAttribute="width" multiplier="0.1" id="2DR-Ds-s1H"/>
+                        <constraint firstItem="kYc-Vg-QBM" firstAttribute="width" secondItem="kn4-sg-iqp" secondAttribute="width" multiplier="0.199913" id="CFQ-IL-o9B"/>
+                        <constraint firstItem="VH6-Wt-XaZ" firstAttribute="width" secondItem="kn4-sg-iqp" secondAttribute="width" multiplier="0.199913" id="bva-BT-KBn"/>
+                        <constraint firstItem="7m4-2o-3bL" firstAttribute="width" secondItem="kn4-sg-iqp" secondAttribute="width" multiplier="0.200348" id="nq6-Ay-FGL"/>
+                    </constraints>
+                </stackView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="kn4-sg-iqp" secondAttribute="trailing" id="3kS-ro-gtH"/>
+                <constraint firstItem="kn4-sg-iqp" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="BRs-gF-PyX"/>
+                <constraint firstItem="kn4-sg-iqp" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="M9C-uZ-gVZ"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="kn4-sg-iqp" secondAttribute="bottom" id="dao-9B-qt9"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="70.992366412213741" y="-300.7042253521127"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
